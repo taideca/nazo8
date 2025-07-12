@@ -1,19 +1,94 @@
 /* all */
-html, body {height: 100%; width: 100%; margin: 0; padding: 0; overflow: hidden }
-/* password */
-#password-container { height: 100%; width: 100%; background-color: #333; color: white; font-family: sans-serif; display: flex; justify-content: center; align-items: center; }
-#password-wall { text-align: center; padding: 2em; border-radius: 10px; background-color: #444; box-shadow: 0 4px 15px rgba(0,0,0,0.5) }
-#password-wall h1 { margin-top: 0 }
-#password-input { padding: 0.5em; border: 1px solid #666; border-radius: 5px; margin-right: 0.5em }
-#password-submit { padding: 0.5em 1em; border: none; border-radius: 5px; background-color: rgb(255, 255, 0); color: white; cursor: pointer }
-#error-message { color: #ff8a8a; margin-top: 1em; visibility: hidden }
-#unity-container { display: none; width: 100%; height: 100% } /* ゲーム本体のコンテナ（認証成功まで非表示） */
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* スクロールバーを常に非表示にする */
+}
+
+/* password page */
+#password-container {
+  height: 100%;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#password-wall {
+  text-align: center;
+  padding: 2em;
+  border-radius: 10px;
+  background-color: #444;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+#password-wall h1 {
+  margin-top: 0;
+}
+
+#password-input {
+  padding: 0.5em;
+  border: 1px solid #666;
+  border-radius: 5px;
+  margin-right: 0.5em;
+}
+
+#password-submit {
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 0);
+  color: black; /* 文字色を黒に変更して見やすくする */
+  cursor: pointer;
+}
+
+#error-message {
+  color: #ff8a8a;
+  margin-top: 1em;
+  visibility: hidden;
+}
+
+
 /* main */
-#unity-container { position: absolute/*fixed; width: 100%; height: 100%*/ }
-#unity-container.unity-desktop { left: 50%; top: 50%; transform: translate(-50%, -50%) }
-#unity-container.unity-mobile { position: fixed; width: 100%; height: 100% }
-#unity-canvas { background: #231F20 /*; width: 100%; height: 100%*/ }
-.unity-mobile #unity-canvas { width: 100%; height: 100% }
+
+/* * ゲーム本体のコンテナ
+ * 認証成功まで非表示。認証後にJavaScriptで display: block に変更される。
+ * position: fixed で画面全体に固定し、width/height 100% で広げる。
+*/
+#unity-container {
+  display: none; 
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+/* * ゲーム画面本体（Canvas）
+ * 親要素である #unity-container に合わせて100%広がるようにする。
+*/
+#unity-canvas {
+  background: #231F20;
+  width: 100%;
+  height: 100%;
+}
+
+/* * デスクトップ用やモバイル用の個別設定は、上記で共通化したため不要。
+ * 残しておいても問題はないが、混乱を避けるためコメントアウトまたは削除を推奨。
+*/
+/*
+#unity-container.unity-desktop { }
+#unity-container.unity-mobile { }
+.unity-mobile #unity-canvas { }
+*/
+
+
+/* Unityフッターとローディングバー（変更なし） */
 #unity-loading-bar { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); display: none }
 #unity-logo { width: 154px; height: 130px; background: url('unity-logo-dark.png') no-repeat center }
 #unity-progress-bar-empty { width: 141px; height: 18px; margin-top: 10px; margin-left: 6.5px; background: url('progress-bar-empty-dark.png') no-repeat center }
