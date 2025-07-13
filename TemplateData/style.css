@@ -51,7 +51,6 @@ html, body {
   top: 0;
   left: 0;
   /* ▼▼▼ Flexboxで中身を上下左右中央揃えにする ▼▼▼ */
-  display: flex;
   justify-content: center;
   align-items: center;
 }
