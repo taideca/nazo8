@@ -5,6 +5,7 @@ html, body {
   margin: 0;
   padding: 0;
   overflow: hidden; /* スクロールバーを常に非表示にする */
+  background-color: #231F20;
 }
 
 /* password page */
@@ -67,6 +68,9 @@ html, body {
   height: 100%;
   top: 0;
   left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* * ゲーム画面本体（Canvas）
@@ -76,6 +80,7 @@ html, body {
   background: #231F20;
   width: 100%;
   height: 100%;
+  object-fit: contain; /* アスペクト比固定 */
 }
 
 /* * デスクトップ用やモバイル用の個別設定は、上記で共通化したため不要。
@@ -88,16 +93,26 @@ html, body {
 */
 
 
-/* Unityフッターとローディングバー（変更なし） */
+/* Unityフッターとローディングバー */
 #unity-loading-bar { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); display: none }
 #unity-logo { width: 154px; height: 130px; background: url('unity-logo-dark.png') no-repeat center }
 #unity-progress-bar-empty { width: 141px; height: 18px; margin-top: 10px; margin-left: 6.5px; background: url('progress-bar-empty-dark.png') no-repeat center }
 #unity-progress-bar-full { width: 0%; height: 18px; margin-top: 10px; background: url('progress-bar-full-dark.png') no-repeat center }
-#unity-footer { display: none }
+#unity-footer { 
+  position: absolute;
+  bottom: 5px;  /* 画面下からの距離 */
+  right: 5px; /* 画面右からの距離 */
+}
+
+#unity-webgl-logo,
+#unity-build-title {
+  display: none;
+}
+
 /*
 .unity-mobile #unity-footer { display: none }
 #unity-webgl-logo { float:left; width: 204px; height: 38px; background: url('webgl-logo.png') no-repeat center }
 #unity-build-title { float: right; margin-right: 10px; line-height: 38px; font-family: arial; font-size: 18px }
-#unity-fullscreen-button { cursor:pointer; float: right; width: 38px; height: 38px; background: url('fullscreen-button.png') no-repeat center }
 */
+#unity-fullscreen-button { cursor:pointer; float: right; width: 38px; height: 38px; background: url('fullscreen-button.png') no-repeat center }
 #unity-warning { position: absolute; left: 50%; top: 5%; transform: translate(-50%); background: white; padding: 10px; display: none }
