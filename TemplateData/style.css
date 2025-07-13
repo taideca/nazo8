@@ -1,14 +1,18 @@
-/* all */
+/* ==================================================================
+ * 全体設定
+ * ================================================================== */
 html, body {
   height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
   overflow: hidden; /* スクロールバーを常に非表示にする */
-  background-color: #231F20;
+  background-color: #231F20; /* 背景をゲームの背景色に合わせる */
 }
 
-/* password page */
+/* ==================================================================
+ * パスワード認証画面のスタイル
+ * ================================================================== */
 #password-container {
   height: 100%;
   width: 100%;
@@ -19,7 +23,6 @@ html, body {
   justify-content: center;
   align-items: center;
 }
-
 #password-wall {
   text-align: center;
   padding: 2em;
@@ -27,39 +30,18 @@ html, body {
   background-color: #444;
   box-shadow: 0 4px 15px rgba(0,0,0,0.5);
 }
-
-#password-wall h1 {
-  margin-top: 0;
-}
-
-#password-input {
-  padding: 0.5em;
-  border: 1px solid #666;
-  border-radius: 5px;
-  margin-right: 0.5em;
-}
-
-#password-submit {
-  padding: 0.5em 1em;
-  border: none;
-  border-radius: 5px;
-  background-color: rgb(255, 255, 0);
-  color: black;
-  cursor: pointer;
-}
-
-#error-message {
-  color: #ff8a8a;
-  margin-top: 1em;
-  visibility: hidden;
-}
+#password-wall h1 { margin-top: 0 }
+#password-input { padding: 0.5em; border: 1px solid #666; border-radius: 5px; margin-right: 0.5em }
+#password-submit { padding: 0.5em 1em; border: none; border-radius: 5px; background-color: rgb(255, 255, 0); color: black; cursor: pointer }
+#error-message { color: #ff8a8a; margin-top: 1em; visibility: hidden }
 
 
-/* main */
+/* ==================================================================
+ * Unityゲーム本体のスタイル
+ * ================================================================== */
 
 /* * ゲーム本体のコンテナ
- * 認証成功まで非表示。認証後にJavaScriptで display: block に変更される。
- * position: fixed で画面全体に固定し、width/height 100% で広げる。
+ * 認証後に表示され、Flexboxを使って中身（Canvas）を中央に配置する役割を持つ。
 */
 #unity-container {
   display: none; 
@@ -68,51 +50,55 @@ html, body {
   height: 100%;
   top: 0;
   left: 0;
+  /* ▼▼▼ Flexboxで中身を上下左右中央揃えにする ▼▼▼ */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 /* * ゲーム画面本体（Canvas）
- * 親要素である #unity-container に合わせて100%広がるようにする。
+ * 親要素（#unity-container）に合わせて、アスペクト比を維持したまま最大化する。
 */
 #unity-canvas {
+  /* サイズは親要素とobject-fitに任せるため、ここでは背景色のみ指定 */
   background: #231F20;
-  width: 100%;
-  height: 100%;
-  object-fit: contain; /* アスペクト比固定 */
+  
+  /* ▼▼▼ アスペクト比を維持するための設定 ▼▼▼ */
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* ★これがアスペクト比を維持する魔法のプロパティ */
 }
 
-/* * デスクトップ用やモバイル用の個別設定は、上記で共通化したため不要。
- * 残しておいても問題はないが、混乱を避けるためコメントアウトまたは削除を推奨。
-*/
-/*
-#unity-container.unity-desktop { }
-#unity-container.unity-mobile { }
-.unity-mobile #unity-canvas { }
-*/
 
-
-/* Unityフッターとローディングバー */
+/* ==================================================================
+ * Unityフッターとローディングバー
+ * ================================================================== */
 #unity-loading-bar { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); display: none }
 #unity-logo { width: 154px; height: 130px; background: url('unity-logo-dark.png') no-repeat center }
 #unity-progress-bar-empty { width: 141px; height: 18px; margin-top: 10px; margin-left: 6.5px; background: url('progress-bar-empty-dark.png') no-repeat center }
 #unity-progress-bar-full { width: 0%; height: 18px; margin-top: 10px; background: url('progress-bar-full-dark.png') no-repeat center }
-#unity-footer { 
+
+/* --- ▼▼▼ フッターの表示を調整 ▼▼▼ --- */
+#unity-footer {
+  /* フッター自体は表示する */
   position: absolute;
   bottom: 5px;  /* 画面下からの距離 */
   right: 5px; /* 画面右からの距離 */
 }
 
+/* フッター内の不要な要素（WebGLロゴとビルドタイトル）を非表示にする */
 #unity-webgl-logo,
 #unity-build-title {
   display: none;
 }
 
-/*
-.unity-mobile #unity-footer { display: none }
-#unity-webgl-logo { float:left; width: 204px; height: 38px; background: url('webgl-logo.png') no-repeat center }
-#unity-build-title { float: right; margin-right: 10px; line-height: 38px; font-family: arial; font-size: 18px }
-*/
-#unity-fullscreen-button { cursor:pointer; float: right; width: 38px; height: 38px; background: url('fullscreen-button.png') no-repeat center }
+/* フルスクリーンボタンはデフォルトで表示されるようになります */
+#unity-fullscreen-button {
+  cursor: pointer;
+  float: right;
+  width: 38px;
+  height: 38px;
+  background: url('fullscreen-button.png') no-repeat center;
+}
+
 #unity-warning { position: absolute; left: 50%; top: 5%; transform: translate(-50%); background: white; padding: 10px; display: none }
