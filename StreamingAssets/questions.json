@@ -67,7 +67,7 @@
             "answer": "すみれ"
         },{
             "rule1": "larger",
-            "rule2": "center2",
+            "rule2": "center5",
             "input": "対称",
             "answer": "たいよう"
         },{
