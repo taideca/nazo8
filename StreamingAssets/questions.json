@@ -5,140 +5,137 @@
             "rule2": "number",
             "input": "菜花",
             "answer": "はち"
-        },
-        {
+        },{
             "rule1": "reversejp",
             "rule2": "week",
             "input": "お告げ",
             "answer": "かお"
-        },
-        {
+        },{
             "rule1": "reversejp",
             "rule2": "nn",
             "input": "駅",
             "answer": "きんえん"
-        },
-        {
+        },{
             "rule1": "reverseen",
             "rule2": "question",
             "input": "鱗",
             "answer": "おとこ"
-        },
-        {
+        },{
             "rule1": "nn",
             "rule2": "oldmaid",
             "input": "駅",
             "answer": "えき"
-        },
-        {
+        },{
             "rule1": "offdaku",
             "rule2": "shift",
             "input": "祈願",
             "answer": "かんき"
-        },
-        {
+        },{
             "rule1": "week",
             "rule2": "switchdaku",
             "input": "豪華",
             "answer": "こうずい"
-        },
-        {
+        },{
             "rule1": "oldmaid",
             "rule2": "forward",
             "input": "症状",
             "answer": "すず"
-        },
-        {
-            "rule1": "back",
-            "rule2": "reverseen",
-            "input": "介護",
-            "answer": "えがお"
-        },
-        {
-            "rule1": "forward",
-            "rule2": "number",
-            "input": "翁",
-            "answer": "かくさん"
-        },
-        {
-            "rule1": "reversejp",
-            "rule2": "reverseen",
-            "input": "気候",
-            "answer": "いこく"
-        },
-        {
-            "rule1": "doremi",
-            "rule2": "reversejp",
-            "input": "ドレス",
-            "answer": "すみれ"
-        },
-        {
-            "rule1": "larger",
-            "rule2": "center2",
-            "input": "対称",
-            "answer": "たいよう"
-        },
-        {
-            "rule1": "number",
-            "rule2": "offdaku",
-            "input": "時給",
-            "answer": "ししゅう"
-        },
-        {
-            "rule1": "oldmaid",
-            "rule2": "larger",
-            "input": "屈託",
-            "answer": "つた"
-        },
-        {
-            "rule1": "week",
-            "rule2": "oldmaid",
-            "input": "段階",
-            "answer": "だんす"
-        },
-        {
-            "rule1": "number",
-            "rule2": "zodiac",
-            "input": "市民",
-            "answer": "ごうまん"
-        },
-        {
-            "rule1": "week",
-            "rule2": "oldmaid",
-            "input": "演目",
-            "answer": "えき"
-        },
-        {
-            "rule1": "offdaku",
-            "rule2": "slide",
-            "input": "風情",
-            "answer": "むてき"
-        },
-        {
-            "rule1": "nn",
-            "rule2": "week",
-            "input": "秋",
-            "answer": "あんど"
-        },
-        {
+        },{
             "rule1": "oldmaid",
             "rule2": "nn",
             "input": "症状",
             "answer": "しんじん"
-        },
-        {
+        },{
+            "rule1": "back",
+            "rule2": "reverseen",
+            "input": "介護",
+            "answer": "えがお"
+        },{
+            "rule1": "forward",
+            "rule2": "number",
+            "input": "翁",
+            "answer": "かくさん"
+        },{
+            "rule1": "reversejp",
+            "rule2": "reverseen",
+            "input": "気候",
+            "answer": "いこく"
+        },{
+            "rule1": "doremi",
+            "rule2": "reversejp",
+            "input": "ドレス",
+            "answer": "すみれ"
+        },{
+            "rule1": "larger",
+            "rule2": "center2",
+            "input": "対称",
+            "answer": "たいよう"
+        },{
+            "rule1": "switchdaku",
+            "rule2": "head",
+            "input": "対称",
+            "answer": "いじょう"
+        },{
+            "rule1": "number",
+            "rule2": "offdaku",
+            "input": "時給",
+            "answer": "ししゅう"
+        },{
+            "rule1": "larger",
+            "rule2": "head",
+            "input": "時給",
+            "answer": "きゆう"
+        },{
+            "rule1": "oldmaid",
+            "rule2": "larger",
+            "input": "屈託",
+            "answer": "つた"
+        },{
+            "rule1": "week",
+            "rule2": "oldmaid",
+            "input": "段階",
+            "answer": "だんす"
+        },{
+            "rule1": "number",
+            "rule2": "zodiac",
+            "input": "市民",
+            "answer": "ごうまん"
+        },{
+            "rule1": "doremi",
+            "rule2": "head",
+            "input": "市民",
+            "answer": "ふぁん"
+        },{
+            "rule1": "week",
+            "rule2": "oldmaid",
+            "input": "演目",
+            "answer": "えき"
+        },{
+            "rule1": "offdaku",
+            "rule2": "slide",
+            "input": "風情",
+            "answer": "むてき"
+        },{
+            "rule1": "nn",
+            "rule2": "week",
+            "input": "秋",
+            "answer": "あんど"
+        },{
+            "rule1": "reverseen",
+            "rule2": "reversejp",
+            "input": "秋",
+            "answer": "かい"
+        },{
             "rule1": "switchdaku",
             "rule2": "reversejp",
             "input": "丸太",
             "answer": "だるま"
-        },
-        {
+        },{
             "rule1": "slide",
             "rule2": "forward",
             "input": "夜景",
             "answer": "りそく"
-        },
-        {
+        },{
             "rule1": "slide",
             "rule2": "forward",
             "input": "証",
