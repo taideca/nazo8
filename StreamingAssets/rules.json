@@ -6,126 +6,115 @@
             "pattern": [
                 {"words":["餌食", "駅"]}
             ]
-        },
-        {
+        },{
+            "id": "center5",
+            "name": "真ん中取る5以上",
+            "pattern": [
+                {"words":["瞬間", "主観"]}
+            ]
+        },{
             "id": "number",
             "name": "数字",
             "pattern": [
                 {"words":["シール", "ゴール"]}
             ]
-        },
-        {
+        },{
             "id": "reversejp",
             "name": "ひらがな逆",
             "pattern": [
                 {"words":["ミルク", "胡桃"]},
                 {"words":["進化","監視"]}
             ]
-        },
-        {
+        },{
             "id": "reverseen",
             "name": "ローマ字逆",
             "pattern": [
                 {"words":["虹", "偉人"]},
                 {"words":["絵馬","雨"]}
             ]
-        },
-        {
+        },{
             "id": "back",
             "name": "1文字前",
             "pattern": [
                 {"words":["二重", "悲壮"]}
             ]
-        },
-        {
+        },{
             "id": "forward",
             "name": "1文字後",
             "pattern": [
                 {"words":["化石", "規則"]}
             ]
-        },
-        {
+        },{
             "id": "nn",
             "name": "ん挟み",
             "pattern": [
                 {"words":["家事", "肝心"]}
             ]
-        },
-        {
+        },{
             "id": "doremi",
             "name": "音階",
             "pattern": [
                 {"words":["シール", "ドール"]}
             ]
-        },
-        {
+        },{
             "id": "week",
             "name": "曜日",
             "pattern": [
                 {"words":["家事", "炊事"]}
             ]
-        },
-        {
+        },{
             "id": "zodiac",
             "name": "干支",
             "pattern": [
                 {"words":["余熱", "洋室"]}
             ]
-        },
-        {
+        },{
             "id": "question",
             "name": "問題文",
             "pattern": [
                 {"words":["太鼓", "タルト"]}
             ]
-        },
-        {
+        },{
             "id": "shift",
             "name": "順番ずれ",
             "pattern": [
                 {"words":["固体", "太鼓"]}
             ]
-        },
-        {
+        },{
             "id": "offdaku",
             "name": "濁点外し",
             "pattern": [
                 {"words":["事件", "試験"]}
             ]
-        },
-        {
+        },{
             "id": "switchdaku",
             "name": "濁点着脱",
             "pattern": [
                 {"words":["事件", "資源"]}
             ]
-        },
-        {
+        },{
             "id": "larger",
             "name": "小文字大文字",
             "pattern": [
                 {"words":["病院", "美容院"]}
             ]
-        },
-        {
+        },{
             "id": "slide",
             "name": "五十音横ずれ",
             "pattern": [
                 {"words":["世界", "手先"]}
             ]
-        },
-        {
+        },{
             "id": "oldmaid",
             "name": "ババ抜き",
             "pattern": [
                 {"words":["特色", "図書"]}
             ]
-        },
-        {
-            "id": "center2",
-            "name": "真ん中取る5以上",
+        },{
+            "id": "head",
+            "name": "頭の文字を取る",
             "pattern": [
-                {"words":["瞬間", "主観"]}
+                {"words":["函館", "戸建"]}
             ]
         }
     ]
