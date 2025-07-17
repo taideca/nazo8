@@ -36,6 +36,11 @@
             "input": "豪華",
             "answer": "こうずい"
         },{
+            "rule1": "week",
+            "rule2": "offdaku",
+            "input": "豪華",
+            "answer": "こうすい"
+        },{
             "rule1": "oldmaid",
             "rule2": "forward",
             "input": "症状",
@@ -140,6 +145,16 @@
             "rule2": "forward",
             "input": "証",
             "answer": "きしつ"
+        },{
+            "rule1": "zodiac",
+            "rule2": "reverseen",
+            "input": "渡来",
+            "answer": "えぬ"
+        },{
+            "rule1": "slide",
+            "rule2": "switchdaku",
+            "input": "蛸",
+            "answer": "なぞ"
         }
     ]
 }
