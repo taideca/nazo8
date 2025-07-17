@@ -2,7 +2,7 @@
     "questions": [
         {
             "rule1": "center",
-            "rule2": "number",
+            "rule2": "number1",
             "input": "菜花",
             "answer": "はち"
         },{
