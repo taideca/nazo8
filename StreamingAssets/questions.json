@@ -121,6 +121,11 @@
             "input": "風情",
             "answer": "むてき"
         },{
+            "rule1": "offdaku",
+            "rule2": "shift",
+            "input": "風情",
+            "answer": "せいふ"
+        },{
             "rule1": "nn",
             "rule2": "week",
             "input": "秋",
@@ -143,8 +148,13 @@
         },{
             "rule1": "slide",
             "rule2": "forward",
-            "input": "証",
-            "answer": "きしつ"
+            "input": "生計",
+            "answer": "とくそく"
+        },{
+            "rule1": "oldmaid",
+            "rule2": "forward",
+            "input": "生計",
+            "answer": "そこ"
         },{
             "rule1": "zodiac",
             "rule2": "reverseen",
